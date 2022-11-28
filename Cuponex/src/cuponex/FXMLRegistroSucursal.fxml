@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cuponex.FXMLRegistroSucursalController">
+   <top>
+      <Pane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #1e3c72;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="336.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUPONEX">
+               <font>
+                  <Font name="Constantia Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="740.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/cupon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #c2e9fb;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="300.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de Sucursal">
+               <font>
+                  <Font name="Constantia Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="30.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="440.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Longitud">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="440.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Latitud">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colonia">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfCodigoPostal" layoutX="215.0" layoutY="282.0" />
+            <TextField fx:id="tfNumero" layoutX="215.0" layoutY="215.0" />
+            <TextField fx:id="tfCalle" layoutX="215.0" layoutY="145.0" />
+            <TextField fx:id="tfNombre" layoutX="215.0" layoutY="80.0" />
+            <Button fx:id="btnCancelar" layoutX="223.0" layoutY="461.0" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/cancelar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAceptar" layoutX="479.0" layoutY="459.0" mnemonicParsing="false" onAction="#clickAceptar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Aceptar">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/cheque.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text layoutX="30.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calle">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfColonia" layoutX="215.0" layoutY="350.0" />
+            <Text layoutX="29.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfCiudad" layoutX="599.0" layoutY="80.0" />
+            <Text layoutX="14.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Postal">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfTelefono" layoutX="599.0" layoutY="145.0" />
+            <Text layoutX="440.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="441.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="443.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encargado">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfLatitud" layoutX="599.0" layoutY="214.0" />
+            <TextField fx:id="tfLongitud" layoutX="599.0" layoutY="282.0" />
+            <TextField fx:id="tfEncargado" layoutX="599.0" layoutY="350.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cuponex.FXMLEditarPromocionController">
+   <top>
+      <Pane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #1e3c72;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="352.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUPONEX">
+               <font>
+                  <Font name="Constantia Bold" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="740.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/cupon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #c2e9fb;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="300.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edición de Promoción">
+               <font>
+                  <Font name="Constantia Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="430.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="432.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Costo de ">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restricciones">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfDescripcion" layoutX="215.0" layoutY="132.0" />
+            <TextField fx:id="tfNombre" layoutX="215.0" layoutY="65.0" />
+            <Button fx:id="btnCancelar" layoutX="223.0" layoutY="461.0" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/cancelar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAceptar" layoutX="479.0" layoutY="459.0" mnemonicParsing="false" onAction="#clickAceptar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Aceptar">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/cheque.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Text layoutX="15.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfRestricciones" layoutX="215.0" layoutY="200.0" />
+            <TextField fx:id="tfPorcentajeDescuento" layoutX="215.0" layoutY="328.0" />
+            <TextField fx:id="tfCostoPromocion" layoutX="599.0" layoutY="67.0" />
+            <Text layoutX="14.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de promoción">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Porcentaje de ">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="432.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estatus">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfCategoria" layoutX="599.0" layoutY="132.0" />
+            <TextField fx:id="tfEstatus" layoutX="599.0" layoutY="191.0" />
+            <TextField fx:id="tfAplicaSucursal" layoutX="599.0" layoutY="263.0" />
+            <TextField fx:id="tfTipoPromocion" layoutX="215.0" layoutY="262.0" />
+            <Text layoutX="14.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="descuento">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="432.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="promoción">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="430.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aplica en sucursal">
+               <font>
+                  <Font name="Constantia Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

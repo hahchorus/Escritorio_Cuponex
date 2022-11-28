@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="937.0" style="-fx-background-color: #c2e9fb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cuponex.FXMLAdminUsuariosController">
+   <children>
+      <Text layoutX="264.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administración de Usuarios">
+         <font>
+            <Font name="Constantia Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAgregar" layoutX="51.0" layoutY="70.0" mnemonicParsing="false" onAction="#clickAgregar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Agregar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/agregar-archivo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="212.0" layoutY="70.0" mnemonicParsing="false" onAction="#clickEliminar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Eliminar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/boton-eliminar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="372.0" layoutY="70.0" mnemonicParsing="false" onAction="#clickEditar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Editar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/registros.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnBuscar" layoutX="525.0" layoutY="70.0" mnemonicParsing="false" onAction="#clickBuscar" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #c2e9fb;" text="Buscar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/buscando.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="tfBusqueda" layoutX="685.0" layoutY="70.0" prefHeight="40.0" prefWidth="219.0" promptText="Ingrese su busqueda" />
+      <TableView fx:id="twUsuarios" layoutX="45.0" layoutY="133.0" prefHeight="200.0" prefWidth="859.0">
+        <columns>
+          <TableColumn fx:id="tcNombre" prefWidth="100.0" text="Nombre" />
+          <TableColumn fx:id="tcApellidoPaterno" prefWidth="131.0" text="Apellido Paterno" />
+            <TableColumn fx:id="tcApellidoMaterno" prefWidth="151.0" text="Apellido Materno" />
+            <TableColumn fx:id="tcCorreo" prefWidth="228.0" text="Correo" />
+            <TableColumn fx:id="tcPassword" prefWidth="248.0" text="Password" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
